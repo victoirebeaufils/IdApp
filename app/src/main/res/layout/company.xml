@@ -43,9 +43,15 @@
     </LinearLayout>
 
     <TextView
-        android:text="Company info"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="Information"
+
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="31dp"
+        android:gravity="center"
+
         android:id="@+id/textView" />
 
     <TextView
@@ -115,8 +121,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/plus"
-                    android:id="@+id/imageButton3"
-                    android:layout_weight="1" />
+                    android:id="@+id/follow_short"
+                    android:layout_weight="1"
+                    android:onClick="follow_short"/>
             </LinearLayout>
 
         </LinearLayout>
@@ -135,6 +142,7 @@
         </LinearLayout>
 
         <TextView
+            android:layout_marginLeft="15dp"
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

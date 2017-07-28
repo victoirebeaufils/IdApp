@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:id="@+id/linearLayout2">
+
+
+        <Button style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="Messages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button12"
+            android:layout_weight="1"
+            android:onClick="openMessagesMenu"/>
+
+        <Button style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="Groups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button11"
+            android:layout_weight="1"
+            android:onClick="openGroups"/>
+
+        <Button style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="Settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button7"
+            android:layout_weight="1"
+            android:onClick="openSettingsMessages"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/navbar">
+        <FrameLayout
+            android:id="@+id/message_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </ScrollView>
+
+</LinearLayout>

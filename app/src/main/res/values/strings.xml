@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_title">Header</string>
+    <string name="search_string">Search</string>
+    <string name="action_0">Settings0</string>
+    <string name="action_settings">Settings1</string>
+    <string name="action_refresh">Settings2</string>
+    <string name="logo_desc">App logo</string>
+</resources>

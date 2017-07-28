@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:id="@+id/linearLayout2">
+        <TextView
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:id="@+id/title_text"
+            android:text="victoire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <ImageButton style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/message"
+            android:id="@+id/imageButton"
+            android:onClick="openMessages"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:text="Home"
+            android:id="@+id/button_main"
+            android:background="@color/colorAccent"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openActivity"
+            />
+        <Button
+            android:id="@+id/button_search"
+            android:text="Search"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openSearch"/>
+        <Button
+            android:text="Profile"
+            android:id="@+id/button_profile"
+            android:background="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openProfile"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/navbar">
+        <FrameLayout
+            android:id="@+id/mainFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </ScrollView>
+
+</RelativeLayout>
